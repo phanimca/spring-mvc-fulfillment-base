@@ -62,6 +62,7 @@ public class CanvasUIController {
         model.addAttribute(SIGNED_REQUEST, srJson);
         cc = cr.getContext();
         CanvasEnvironmentContext ce = cc.getEnvironmentContext();
+		invoiceService.setSignedRequest(cr);
         Map<String, Object> params = ce.getParameters();
         if (params.containsKey("orderId")) {
             invoiceService.setSignedRequest(cr);
