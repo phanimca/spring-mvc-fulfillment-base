@@ -1,0 +1,23 @@
+{
+  "name": "spring-mvc-fulfillment-base",
+  "scripts": {
+  },
+  "env": {
+    "CANVAS_CONSUMER_SECRET": "3MVG9ZL0ppGP5UrDMJWNu9s0ULw_pybxwT89HOYMpPpYav93sR1n06J28b72vRAjxBUFmkpfuTXKvJhGTy80.",
+    "OAUTH_CLIENT_KEY": "3MVG9ZL0ppGP5UrDMJWNu9s0ULw_pybxwT89HOYMpPpYav93sR1n06J28b72vRAjxBUFmkpfuTXKvJhGTy80.",
+    "OAUTH_CLIENT_SECRET": "8338416598390512390"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    }
+  ]
+}
