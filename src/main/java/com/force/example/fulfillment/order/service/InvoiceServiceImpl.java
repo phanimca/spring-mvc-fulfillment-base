@@ -25,7 +25,7 @@ public class InvoiceServiceImpl implements InvoiceService {
             s.setAccessToken(cr.getClient().getOAuthToken());
             s.setApiEndpoint(cr.getClient().getInstanceUrl());
         } else {
-            SecurityContext sc = ForceSecurityContextHolder.get();
+            SecurityContext sc = ForceSecurityContextHolder.get(false);
             s.setAccessToken(sc.getSessionId());
             s.setApiEndpoint(sc.getEndPointHost());
         }
